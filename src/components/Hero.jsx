@@ -53,7 +53,7 @@ const Hero = () => {
             {/* Image Container */}
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-gray-800 overflow-hidden shadow-2xl">
               <img 
-                src="/surjeet-icon.png" 
+                src="/surjeet-singh-portfolio.jpg" 
                 alt="Surjeet Singh - AI Deployment Engineer and Python Developer" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 onError={(e) => {
