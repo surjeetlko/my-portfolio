@@ -1,46 +1,46 @@
-import { FaGithub, FaExternalLinkAlt, FaFolderOpen, FaMicrochip } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaFolderOpen, FaLock } from 'react-icons/fa';
 
-const openSourceRepos = [
+const featuredSystems = [
   {
-    title: "SPR-139 GE ECG Dual API Integration",
-    repo: "CriterionWorks/SPR-139-XML-JSON-GE-ECG-Integration",
-    url: "https://github.com/CriterionWorks/SPR-139-XML-JSON-GE-ECG-Integration",
-    description: "Automated real-time pipeline converting GE MAC 2000 ECG XML files to JSON payloads and transmitting to medical endpoints.",
+    title: "12-Lead ECG Data Ingestion Pipeline",
+    repo: "Enterprise Medical Telemetry",
+    url: "https://github.com/surjeetlko",
+    description: "Automated real-time pipeline converting 12-Lead ECG XML files to JSON payloads and transmitting to healthcare APIs with zero data loss.",
     tech: ["Python", "Flask", "Docker", "XML/JSON"]
   },
   {
-    title: "SPR-148 ECG Image Digitization API",
-    repo: "CriterionWorks/SPR-148-ECG-Image-Digitization-API",
-    url: "https://github.com/CriterionWorks/SPR-148-ECG-Image-Digitization-API",
-    description: "Computer vision API extracting waveform features from paper ECG scans for historical cardiac progress tracking.",
+    title: "ECG Paper Image Digitization API",
+    repo: "Computer Vision Signal Extraction",
+    url: "https://github.com/surjeetlko",
+    description: "Computer vision API extracting signal contours and lead features from paper ECG scans for historical cardiac progress tracking.",
     tech: ["OpenCV", "Python", "Flask", "Computer Vision"]
   },
   {
-    title: "SPR-147 Audio Processing API",
-    repo: "CriterionWorks/SPR-147-Audio-Processing-API",
-    url: "https://github.com/CriterionWorks/SPR-147-Audio-Processing-API",
-    description: "Reverse proxy API microservice handling acoustic speech analysis and generating diagnostic PDF reports.",
+    title: "Acoustic Speech & Audio Analysis API",
+    repo: "Acoustic DSP Microservice",
+    url: "https://github.com/surjeetlko",
+    description: "Reverse proxy API microservice handling speech and acoustic analysis, generating diagnostic PDF reports.",
     tech: ["Docker", "Python", "Audio DSP", "Flask"]
   },
   {
-    title: "SPR-104 BMS Shelly ICU Monitoring",
-    repo: "CriterionWorks/SPR-104-BMS-Shelly",
-    url: "https://github.com/CriterionWorks/SPR-104-BMS-Shelly",
+    title: "ICU Building Management System (BMS)",
+    repo: "IoT & Hardware Automation",
+    url: "https://github.com/surjeetlko",
     description: "Real-time IoT BMS monitoring system with Flask/WebSockets backend and ESP32 ICU microcontrollers.",
     tech: ["Flask", "WebSockets", "ESP32", "Docker"]
   },
   {
-    title: "SPR-106 Baby Cry Acoustic Analysis",
-    repo: "CriterionWorks/SPR-106-BabyCryAnalysisSystem",
-    url: "https://github.com/CriterionWorks/SPR-106-BabyCryAnalysisSystem",
-    description: "Deep learning classification system predicting infant cry distress triggers with OpenAPI endpoints.",
+    title: "Baby Cry Acoustic Classification Engine",
+    repo: "Deep Learning Sound AI",
+    url: "https://github.com/surjeetlko",
+    description: "Deep learning classification system analyzing acoustic spectrograms to predict infant distress triggers.",
     tech: ["Deep Learning", "FastAPI", "Docker", "PyTorch"]
   },
   {
-    title: "SPR-107 PhysioSight rPPG Vitals",
-    repo: "CriterionWorks/SPR-107-PhysioSight-rPPG",
-    url: "https://github.com/CriterionWorks/SPR-107-PhysioSight-rPPG",
-    description: "Contactless Remote Photoplethysmography estimating heart rate via camera video chrominance filtering.",
+    title: "Contactless rPPG Vital Sign Estimator",
+    repo: "Computer Vision Vital Signs",
+    url: "https://github.com/surjeetlko",
+    description: "Contactless Remote Photoplethysmography estimating heart rate via camera video chrominance signal processing.",
     tech: ["OpenCV", "MediaPipe", "Python", "rPPG"]
   }
 ];
@@ -53,16 +53,16 @@ const Projects = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4">
-            Featured <span className="text-gradient-cyan">GitHub Repositories</span>
+            Production <span className="text-gradient-cyan">Systems & Repositories</span>
           </h2>
           <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-            Open-source and enterprise repositories highlighting microservice architectures, computer vision pipelines, and IoT automation.
+            Highlighted architectures across computer vision pipelines, real-time IoT automation, and containerized microservices.
           </p>
         </div>
 
         {/* Repos Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {openSourceRepos.map((repo, idx) => (
+          {featuredSystems.map((repo, idx) => (
             <div 
               key={idx}
               className="bg-gray-950 p-6 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1 shadow-xl flex flex-col justify-between glass-card group"
@@ -70,14 +70,9 @@ const Projects = () => {
               <div>
                 <div className="flex items-center justify-between mb-3">
                   <FaFolderOpen className="text-blue-400 text-xl" />
-                  <a 
-                    href={repo.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    <FaGithub className="text-lg" />
-                  </a>
+                  <span className="text-[10px] font-mono px-2 py-0.5 bg-gray-900 text-gray-400 rounded border border-gray-800 flex items-center gap-1">
+                    <FaLock className="text-[9px] text-amber-400" /> Enterprise Private
+                  </span>
                 </div>
 
                 <h3 className="text-base font-bold text-gray-100 group-hover:text-blue-400 transition-colors mb-2">
@@ -99,12 +94,12 @@ const Projects = () => {
                 </div>
 
                 <a 
-                  href={repo.url} 
+                  href="https://github.com/surjeetlko" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors pt-2 border-t border-gray-800 w-full"
                 >
-                  View Code Repository <FaExternalLinkAlt className="text-[10px]" />
+                  View Developer Profile @surjeetlko <FaExternalLinkAlt className="text-[10px]" />
                 </a>
               </div>
             </div>
@@ -119,7 +114,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 bg-gray-950 hover:bg-gray-800 text-white border border-gray-700 hover:border-blue-400 rounded-xl font-semibold text-sm transition-all shadow-lg"
           >
-            <FaGithub className="text-lg" /> View All GitHub Work @surjeetlko
+            <FaGithub className="text-lg" /> Explore GitHub Profile @surjeetlko
           </a>
         </div>
 

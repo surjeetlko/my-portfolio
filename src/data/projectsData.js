@@ -1,4 +1,4 @@
-// Comprehensive database of 30+ Microservices, AI Pipelines & Systems managed by Surjeet Singh
+// Sanitized database of 30+ Microservices & AI Pipelines managed by Surjeet Singh
 
 export const projectCategories = [
   { id: "all", label: "All Systems (30+)" },
@@ -11,10 +11,10 @@ export const projectCategories = [
 export const projectsData = [
   // 1. FTP Server Setup
   {
-    id: "spr138",
-    packageId: "SPR138",
-    projectId: "CT-PR-0038",
-    title: "SFTP & FTP Medical Data Ingestion Server",
+    id: "sys-01",
+    packageId: "Microservice #01",
+    projectId: "Production Infra",
+    title: "SFTP & FTP Medical Telemetry Data Receiver",
     category: "medical-ecg",
     status: "Running (Docker)",
     priority: "HIGH",
@@ -22,7 +22,7 @@ export const projectsData = [
     description: "Containerized high-security SFTP/FTP server setup designed to receive raw 12-Lead ECG telemetry directly from hospital equipment with automated directory watching and file validation.",
     architecture: "Docker Container -> FTP Port Monitor -> Security Layer -> Automated Storage Pipeline",
     tech: ["Docker", "FTP/SFTP", "Linux Security", "Network Engineering"],
-    github: "https://github.com/CriterionWorks/SPR-138-FTP-Server-Data-Receiver",
+    github: "",
     highlights: [
       "Automated directory polling for incoming binary/XML medical files",
       "Isolated container environment preventing host system vulnerability",
@@ -31,9 +31,9 @@ export const projectsData = [
   },
   // 2. GE Machine ECG Report UI & API Integration
   {
-    id: "spr139",
-    packageId: "SPR139",
-    projectId: "CT-PR-0038",
+    id: "sys-02",
+    packageId: "Microservice #02",
+    projectId: "Data Pipeline",
     title: "GE MAC 2000 ECG Dual API Integration & Parser",
     category: "medical-ecg",
     status: "Running (Docker + Flask)",
@@ -42,7 +42,7 @@ export const projectsData = [
     description: "Automated real-time data pipeline monitoring FTP servers for new GE MAC 2000 12-lead ECG XML files, parsing waveform data into structured JSON, and uploading records to external hospital HIS APIs with fail-proof queueing.",
     architecture: "GE MAC 2000 -> FTP Server -> XML-to-JSON Parser -> DB Fallback Queue -> Hospital HIS API",
     tech: ["Docker", "Python", "Flask", "XML/JSON", "Database Queue", "REST API"],
-    github: "https://github.com/CriterionWorks/SPR-139-XML-JSON-GE-ECG-Integration",
+    github: "",
     highlights: [
       "100% automated real-time conversion from complex XML to JSON",
       "Debugged database queue & Docker networking for zero-downtime reliability",
@@ -51,9 +51,9 @@ export const projectsData = [
   },
   // 3. ECG Monitoring Dashboard
   {
-    id: "spr141",
-    packageId: "SPR141",
-    projectId: "CT-PR-0038",
+    id: "sys-03",
+    packageId: "Microservice #03",
+    projectId: "Real-Time UI",
     title: "Real-Time ECG Monitoring Web Dashboard",
     category: "medical-ecg",
     status: "Running (Docker)",
@@ -62,7 +62,7 @@ export const projectsData = [
     description: "Centralized web application providing live visualization of multi-lead ECG signals, historical report browsing, automated alert notifications, and PDF report downloads for ICU clinicians.",
     architecture: "ECG Telemetry -> WebSocket/REST Gateway -> Web Canvas Renderer -> Clinical UI",
     tech: ["Docker", "Flask", "JavaScript", "WebSockets", "Canvas API"],
-    github: "https://github.com/CriterionWorks/SPR-141-ECG-Monitoring-Dashboard",
+    github: "",
     highlights: [
       "Low-latency real-time waveform rendering",
       "Multi-patient concurrent status tracking",
@@ -71,9 +71,9 @@ export const projectsData = [
   },
   // 4. Philips ECG & Dual API Integration
   {
-    id: "spr140",
-    packageId: "SPR140",
-    projectId: "CT-PR-0185",
+    id: "sys-04",
+    packageId: "Microservice #04",
+    projectId: "Data Ingestion",
     title: "Philips ECG Dual API Data Pipeline",
     category: "medical-ecg",
     status: "Running (Docker)",
@@ -82,7 +82,7 @@ export const projectsData = [
     description: "Automated ingestion pipeline continuously processing diagnostic JSON files from Philips ECG equipment, running quality validation algorithms, and transmitting structured records to external medical endpoints.",
     architecture: "Philips Hardware -> File Monitor -> Data Validation Microservice -> HIS API Gateway",
     tech: ["Docker", "Python", "REST API", "Microservices", "JSON Parsing"],
-    github: "https://github.com/CriterionWorks/SPR-140-Philips-ECG-Dual-API-Integration",
+    github: "",
     highlights: [
       "Automated file watch system with exponential backoff retries",
       "Seamless integration with legacy hospital backend infrastructure",
@@ -91,9 +91,9 @@ export const projectsData = [
   },
   // 5. All Device Status Manager
   {
-    id: "device-status-mgr",
-    packageId: "AllDeviceStatusManager",
-    projectId: "CT-PR-0185",
+    id: "sys-05",
+    packageId: "Microservice #05",
+    projectId: "Central Manager",
     title: "All Device Status Manager (15+ Hospital Devices)",
     category: "iot-telemetry",
     status: "Running (Docker + Flask)",
@@ -111,9 +111,9 @@ export const projectsData = [
   },
   // 6. Audio Processing API
   {
-    id: "spr147",
-    packageId: "SPR147",
-    projectId: "CT-PR-0050",
+    id: "sys-06",
+    packageId: "Microservice #06",
+    projectId: "Audio Engine",
     title: "Acoustic & Vocal Speech Processing API",
     category: "ai-vision",
     status: "Running (Docker + Flask)",
@@ -122,7 +122,7 @@ export const projectsData = [
     description: "Reverse proxy API microservice that receives audio files for acoustic and speech analysis, executes feature extraction algorithms, and returns structured JSON analysis along with generated PDF reports.",
     architecture: "Reverse Proxy -> Audio Ingestion API -> DSP Feature Extraction -> Report Generator",
     tech: ["Docker", "Python", "Flask", "Audio DSP", "PDF Generator", "Reverse Proxy"],
-    github: "https://github.com/CriterionWorks/SPR-147-Audio-Processing-API",
+    github: "",
     highlights: [
       "High-throughput reverse proxy handling concurrent voice uploads",
       "Automated acoustic spectrum analysis & metric calculation",
@@ -131,9 +131,9 @@ export const projectsData = [
   },
   // 7. ECG Image Processing Digitization API
   {
-    id: "spr148",
-    packageId: "SPR148",
-    projectId: "CT-PR-0157",
+    id: "sys-07",
+    packageId: "Microservice #07",
+    projectId: "Vision API",
     title: "ECG Paper Image Digitization & Progress Tracking API",
     category: "ai-vision",
     status: "Running (Docker + Flask)",
@@ -142,7 +142,7 @@ export const projectsData = [
     description: "Computer Vision microservice that accepts paper ECG image scans (single or side-by-side comparison), extracts signal contours via grid calibration, and computes temporal progression metrics between historical scans.",
     architecture: "Image Upload -> OpenCV Grid Calibration -> Waveform Extraction -> Comparison Engine -> REST Response",
     tech: ["Docker", "Python", "OpenCV", "Flask", "Computer Vision", "Signal Digitization"],
-    github: "https://github.com/CriterionWorks/SPR-148-ECG-Image-Digitization-API",
+    github: "",
     highlights: [
       "Digitizes paper/scanned ECG prints into numerical vector signals",
       "Side-by-side comparative feature analysis for tracking patient improvement",
@@ -151,10 +151,10 @@ export const projectsData = [
   },
   // 8. Urine Measurements with Camera & Node-RED Pipeline
   {
-    id: "urine-system",
-    packageId: "Urine System",
-    projectId: "CT-PR-0185",
-    title: "AI Camera Urine Measurement & Data Pipeline",
+    id: "sys-08",
+    packageId: "Microservice #08",
+    projectId: "Camera Vision & Telemetry",
+    title: "AI Camera Urine Measurement & Continuous Data Pipeline",
     category: "iot-telemetry",
     status: "Running (Docker + Node-RED)",
     priority: "HIGH",
@@ -171,9 +171,9 @@ export const projectsData = [
   },
   // 9. IV-Fluid Data Handling & Server Synchronization
   {
-    id: "iv-fluid-system",
-    packageId: "IV Fluid Data",
-    projectId: "CT-PR-0185",
+    id: "sys-09",
+    packageId: "Microservice #09",
+    projectId: "Medication Pipeline",
     title: "Automated IV Fluid Monitoring & Medication Pipeline",
     category: "iot-telemetry",
     status: "Running (Docker)",
@@ -191,9 +191,9 @@ export const projectsData = [
   },
   // 10. Heart Sound & Lung Sound Analyzer API
   {
-    id: "spr149",
-    packageId: "SPR149",
-    projectId: "CT-PR-0082",
+    id: "sys-10",
+    packageId: "Microservice #10",
+    projectId: "Acoustic AI",
     title: "Acoustic Heart & Lung Sound Analysis API",
     category: "ai-vision",
     status: "Running (Flask + Node-RED)",
@@ -211,9 +211,9 @@ export const projectsData = [
   },
   // 11. PPG Blood Glucose Analysis
   {
-    id: "spr006",
-    packageId: "SPR006",
-    projectId: "CT-PR-0099",
+    id: "sys-11",
+    packageId: "Microservice #11",
+    projectId: "Signal Analytics",
     title: "PPG Signal Blood Glucose Analysis Engine",
     category: "ai-vision",
     status: "Running (Docker)",
@@ -222,7 +222,7 @@ export const projectsData = [
     description: "Automated data analysis pipeline and API that processes raw optical Photoplethysmography (PPG) signals to non-invasively estimate blood glucose levels and cardiovascular metrics using regression models.",
     architecture: "Raw PPG Signal -> Noise Filtering -> Waveform Feature Extraction -> Regression Model -> API Endpoint",
     tech: ["Docker", "Python", "Machine Learning", "SciPy / Pandas", "REST API"],
-    github: "https://github.com/CriterionWorks/SPR-006-PPG-Blood-Glucose-Analysis",
+    github: "",
     highlights: [
       "Non-invasive glucose estimation from optical sensor data",
       "Daily automated regression statistics calculation",
@@ -231,9 +231,9 @@ export const projectsData = [
   },
   // 12. Glucose Monitoring API
   {
-    id: "spr150",
-    packageId: "SPR150",
-    projectId: "CT-PR-0099",
+    id: "sys-12",
+    packageId: "Microservice #12",
+    projectId: "CGM Gateway",
     title: "Continuous Glucose Monitoring Telemetry API",
     category: "iot-telemetry",
     status: "Running (Node-RED)",
@@ -242,7 +242,7 @@ export const projectsData = [
     description: "Reverse proxy API endpoint accepting continuous glucose monitoring streams, validating payload parameters, parsing real-time metrics, and generating JSON analytical summaries.",
     architecture: "Sensor Input -> Node-RED Pipeline -> Validation Engine -> Database -> JSON Report",
     tech: ["Node-RED", "JSON Processing", "REST API", "Data Pipelines"],
-    github: "https://github.com/CriterionWorks/SPR-150-Glucose-Monitoring-API",
+    github: "",
     highlights: [
       "Real-time data streaming for glycemic variability analytics",
       "Lightweight Node-RED routing layer with low memory footprint",
@@ -251,9 +251,9 @@ export const projectsData = [
   },
   // 13. Pocket ECG API
   {
-    id: "spr151",
-    packageId: "SPR151",
-    projectId: "CT-PR-0088",
+    id: "sys-13",
+    packageId: "Microservice #13",
+    projectId: "Handheld Signal API",
     title: "Handheld Pocket ECG Signal Processor API",
     category: "medical-ecg",
     status: "Running (Node-RED)",
@@ -262,7 +262,7 @@ export const projectsData = [
     description: "Microservice API tailored for portable handheld ECG devices, processing single-channel or 3-lead data packets into clean lead views and formatted PDF reports.",
     architecture: "Pocket Device -> Bluetooth/HTTP -> Node-RED Engine -> Signal Smoothing -> PDF Engine",
     tech: ["Node-RED", "Python", "Signal Processing", "PDF Generation"],
-    github: "https://github.com/CriterionWorks/SPR-151-Pocket-ECG-API",
+    github: "",
     highlights: [
       "Designed for low-power handheld point-of-care cardiac devices",
       "Fast signal noise removal and QRS complex identification",
@@ -271,9 +271,9 @@ export const projectsData = [
   },
   // 14. Wireless ECG API
   {
-    id: "spr152",
-    packageId: "SPR152",
-    projectId: "CT-PR-0133",
+    id: "sys-14",
+    packageId: "Microservice #14",
+    projectId: "Wireless Telemetry",
     title: "Wireless Telemetry ECG Ingestion API",
     category: "medical-ecg",
     status: "Running (Node-RED)",
@@ -282,7 +282,7 @@ export const projectsData = [
     description: "High-speed telemetry receiver endpoint accepting continuous wireless ECG streams over WiFi/Bluetooth, maintaining socket connections, and serving live diagnostic data.",
     architecture: "Wireless Sensor -> Node-RED WebSocket Server -> Stream Parser -> Central API",
     tech: ["Node-RED", "WebSockets", "Python", "IoT Telemetry"],
-    github: "https://github.com/CriterionWorks/SPR-152-Wireless-ECG-API",
+    github: "",
     highlights: [
       "Handles wireless packet loss recovery gracefully",
       "Real-time waveform streaming to mobile patient apps",
@@ -291,9 +291,9 @@ export const projectsData = [
   },
   // 15. Fetal Doppler & dB Vocal Recorder API
   {
-    id: "spr153",
-    packageId: "SPR153",
-    projectId: "CT-PR-0122",
+    id: "sys-15",
+    packageId: "Microservice #15",
+    projectId: "Doppler Sound API",
     title: "Fetal Doppler Acoustic & dB Sound Recorder API",
     category: "ai-vision",
     status: "Running (Node-RED)",
@@ -302,7 +302,7 @@ export const projectsData = [
     description: "Reverse proxy acoustic processing microservice for fetal heart sound monitors and ambient dB vocal recording devices, converting acoustic inputs into structured health indicators.",
     architecture: "Acoustic Sensor -> Node-RED Gateway -> Frequency Estimator -> JSON Report Engine",
     tech: ["Node-RED", "Audio DSP", "REST API", "JSON Processing"],
-    github: "https://github.com/CriterionWorks/SPR-153-Fetal-Doppler-Vocal-Recorder-API",
+    github: "",
     highlights: [
       "Extracts fetal heart rate (FHR) from doppler audio streams",
       "Ambient noise level logging and vocal intensity reporting",
@@ -311,9 +311,9 @@ export const projectsData = [
   },
   // 16. Real Time Sensor Monitoring
   {
-    id: "rts-monitoring",
-    packageId: "Sensor Monitoring",
-    projectId: "CT-PR-0185",
+    id: "sys-16",
+    packageId: "Microservice #16",
+    projectId: "Environmental Telemetry",
     title: "Multi-Sensor IoT Telemetry & Dynamic SQL Pipeline",
     category: "iot-telemetry",
     status: "Running (Node-RED + MySQL)",
@@ -331,9 +331,9 @@ export const projectsData = [
   },
   // 17. BMS Dashboard (Shelly)
   {
-    id: "spr104",
-    packageId: "SPR104",
-    projectId: "CT-PR-0148",
+    id: "sys-17",
+    packageId: "Microservice #17",
+    projectId: "BMS Platform",
     title: "Smart ICU Building Management System (Shelly & ESP32)",
     category: "bms-infra",
     status: "Running (Docker + Flask)",
@@ -342,7 +342,7 @@ export const projectsData = [
     description: "Real-time IoT monitoring and hardware control system built with Python (Flask & WebSockets) and ESP32 microcontrollers, providing live ICU environment dashboards and dynamic hardware configuration dispatching.",
     architecture: "ESP32 Sensors -> WebSocket Server -> Flask Backend -> Real-Time Dashboard -> Hardware Actuators",
     tech: ["Docker", "Python", "Flask", "WebSockets", "ESP32", "IoT Control"],
-    github: "https://github.com/CriterionWorks/SPR-104-BMS-Shelly",
+    github: "",
     highlights: [
       "Zero-downtime multi-threaded TCP/Flask backend server",
       "Bi-directional WebSocket control for remote hardware switching",
@@ -351,10 +351,10 @@ export const projectsData = [
   },
   // 18. BMS Dashboard (IAQ & BIOX)
   {
-    id: "spr105",
-    packageId: "SPR105",
-    projectId: "CT-PR-0148",
-    title: "BMS Indoor Air Quality & BIOX Panel Dashboard",
+    id: "sys-18",
+    packageId: "Microservice #18",
+    projectId: "Air Quality Control",
+    title: "BMS Indoor Air Quality & Environmental Dashboard",
     category: "bms-infra",
     status: "Running (Docker)",
     priority: "MEDIUM",
@@ -362,7 +362,7 @@ export const projectsData = [
     description: "Containerized environmental tracking dashboard gathering live parameters (temperature, humidity, air quality, lighting) from remote hardware panels (Raspberry Pi & BIOX panels) across hospital zones.",
     architecture: "Raspberry Pi & BIOX Panels -> Telemetry Gateway -> Dockerized Dashboard -> Web UI",
     tech: ["Docker", "Python", "Raspberry Pi", "Sensors", "Web UI"],
-    github: "https://github.com/CriterionWorks/SPR-105-BMS-IAQ",
+    github: "",
     highlights: [
       "Consolidates IAQ data across multiple hospital operating theaters",
       "Containerized microservice with fast client rendering",
@@ -371,9 +371,9 @@ export const projectsData = [
   },
   // 19. Philips TC35 ECG DICOM ORTHANC Setup
   {
-    id: "spr109",
-    packageId: "SPR109",
-    projectId: "CT-PR-0185",
+    id: "sys-19",
+    packageId: "Microservice #19",
+    projectId: "DICOM Archive",
     title: "Philips TC35 ECG DICOM Orthanc Archive Setup",
     category: "medical-ecg",
     status: "Running (Systemd + DICOM)",
@@ -382,7 +382,7 @@ export const projectsData = [
     description: "Enterprise DICOM (Orthanc) server setup and network bridge configured to receive, archive, and retrieve 12-lead ECG records directly from Philips TC35 machines across hospital networks.",
     architecture: "Philips TC35 Machine -> DICOM Protocol (C-STORE) -> Orthanc Server -> Web Explorer API",
     tech: ["Orthanc DICOM", "Systemd", "Linux Networking", "Medical PACS/DICOM"],
-    github: "https://github.com/CriterionWorks/SPR-109-Philips-TC35-ECG-DICOM-Setup",
+    github: "",
     highlights: [
       "Full compliance with DICOM imaging & waveform standards",
       "Automated storage management with web explorer preview",
@@ -391,9 +391,9 @@ export const projectsData = [
   },
   // 20. Baby Cry Analysis System
   {
-    id: "spr106",
-    packageId: "SPR106",
-    projectId: "CT-PR-0190",
+    id: "sys-20",
+    packageId: "Microservice #20",
+    projectId: "Deep Acoustic AI",
     title: "Baby Cry Deep Learning Acoustic Analyzer",
     category: "ai-vision",
     status: "Running (Docker + FastAPI)",
@@ -402,7 +402,7 @@ export const projectsData = [
     description: "Containerized AI sound classification platform using deep acoustic neural networks to analyze infant cry audio, predict root causes (pain, hunger, discomfort), and log acoustic datasets for research.",
     architecture: "Audio File -> Mel-Spectrogram Engine -> Neural Classifier -> FastAPI Endpoint -> JSON Result",
     tech: ["Docker", "Python", "FastAPI / Flask", "Deep Learning", "PyTorch / TensorFlow", "OpenAPI"],
-    github: "https://github.com/CriterionWorks/SPR-106-BabyCryAnalysisSystem",
+    github: "",
     highlights: [
       "Acoustic spectrogram classification for infant distress reason prediction",
       "Interactive Swagger/OpenAPI documentation endpoint",
@@ -411,9 +411,9 @@ export const projectsData = [
   },
   // 21. Three-Channel AC Device Status Monitor
   {
-    id: "spr122",
-    packageId: "SPR122",
-    projectId: "CT-PR-0206",
+    id: "sys-21",
+    packageId: "Microservice #21",
+    projectId: "MQTT Power Monitor",
     title: "Three-Channel AC Device Telemetry Monitor",
     category: "bms-infra",
     status: "Running (Docker + MQTT)",
@@ -422,18 +422,18 @@ export const projectsData = [
     description: "IoT telemetry system providing real-time power and operational status tracking for industrial 3-phase AC hospital devices via MQTT message broker to a responsive web dashboard.",
     architecture: "Current Sensors -> ESP32 -> MQTT Broker -> Python Collector -> Real-Time Dashboard",
     tech: ["Docker", "MQTT", "Python", "IoT Telemetry", "Web Dashboards"],
-    github: "https://github.com/CriterionWorks/SPR-122-Three-Channel-AC-Device-Status-Monitor",
+    github: "",
     highlights: [
       "Real-time MQTT telemetry monitoring for high-voltage medical hardware",
       "Instant push notifications upon phase failure or power drop",
-      "REST API `/api/latest` for external monitoring tool integration"
+      "REST API for external monitoring tool integration"
     ]
   },
   // 22. Water Level Sensor Monitor
   {
-    id: "spr131",
-    packageId: "SPR131",
-    projectId: "CT-PR-0205",
+    id: "sys-22",
+    packageId: "Microservice #22",
+    projectId: "Fluid Telemetry",
     title: "Automated Water Reservoir Telemetry Monitor",
     category: "bms-infra",
     status: "Running (Docker)",
@@ -442,38 +442,38 @@ export const projectsData = [
     description: "Dockerized IoT monitoring platform tracking real-time liquid reservoir tank levels across facility infrastructure with threshold alerts and REST API reporting.",
     architecture: "Ultrasonic Sensors -> Hardware Node -> Docker Microservice -> REST API & Dashboard",
     tech: ["Docker", "Python", "REST API", "IoT Monitoring"],
-    github: "https://github.com/CriterionWorks/SPR-131-WaterLevelSensor-Integration.git",
+    github: "",
     highlights: [
       "Continuous level monitoring preventing tank overflows or dry runs",
-      "Clean REST endpoint `/api/data` for automated reporting",
+      "Clean REST endpoint for automated reporting",
       "Low resource container implementation"
     ]
   },
   // 23. Libre Glucose Data Backend API
   {
-    id: "spr145",
-    packageId: "SPR145",
-    projectId: "CT-PR-0168",
+    id: "sys-23",
+    packageId: "Microservice #23",
+    projectId: "Glucose Backend",
     title: "Libre Continuous Glucose Telemetry Backend API",
     category: "medical-ecg",
     status: "Running (Docker)",
     priority: "MEDIUM",
     migrationStatus: "Migrated",
-    description: "High-reliability Dockerized microservice endpoint handling Abbott Libre glucose sensor streams, parsing continuous blood sugar trends, and providing v1 REST endpoints.",
+    description: "High-reliability Dockerized microservice endpoint handling continuous glucose sensor streams, parsing blood sugar trends, and providing v1 REST endpoints.",
     architecture: "Continuous Sensor Stream -> REST Endpoint -> Schema Validation -> JSON Storage",
     tech: ["Docker", "Python", "REST API", "Health Telemetry"],
     github: "",
     highlights: [
-      "Standardized `/api/v1/libre_glucose_data_api` response structure",
+      "Standardized REST API response structure",
       "Containerized deployment with continuous health monitoring",
       "Secure payload validation"
     ]
   },
   // 24. PhysioSight rPPG
   {
-    id: "spr107",
-    packageId: "SPR107",
-    projectId: "CT-PR-0187",
+    id: "sys-24",
+    packageId: "Microservice #24",
+    projectId: "Vision Vitals",
     title: "PhysioSight Contactless rPPG Vital Sign Estimator",
     category: "ai-vision",
     status: "Running (Python + Vision)",
@@ -482,7 +482,7 @@ export const projectsData = [
     description: "Contactless Remote Photoplethysmography (rPPG) Computer Vision application that estimates heart rate and respiratory vitals in real time using webcam video facial color variations.",
     architecture: "Webcam Stream -> Face Tracking (MediaPipe/OpenCV) -> Chrominance rPPG Filtering -> Heart Rate Output",
     tech: ["Python", "OpenCV", "rPPG", "MediaPipe", "Signal Processing", "Computer Vision"],
-    github: "https://github.com/CriterionWorks/SPR-107-PhysioSight-rPPG",
+    github: "",
     highlights: [
       "Contactless vital sign detection without physical skin sensors",
       "Advanced temporal chrominance signal filtering for motion artifact removal",
@@ -491,9 +491,9 @@ export const projectsData = [
   },
   // 25. FootSole Detection for GCS Measurement
   {
-    id: "spr061",
-    packageId: "SPR061",
-    projectId: "CT-PR-0163",
+    id: "sys-25",
+    packageId: "Microservice #25",
+    projectId: "Clinical Vision AI",
     title: "Foot Sole Vision Detection for Neurological GCS Assessment",
     category: "ai-vision",
     status: "Running (YOLOv8)",
@@ -502,7 +502,7 @@ export const projectsData = [
     description: "Computer Vision pipeline utilizing trained YOLOv8 object detection models to identify foot sole reflex zones for automated Glasgow Coma Scale (GCS) clinical assessments.",
     architecture: "Camera Input -> YOLOv8 Detection -> Region-of-Interest Extraction -> Clinical Scoring Module",
     tech: ["YOLOv8", "OpenCV", "Python", "Computer Vision", "Medical AI"],
-    github: "https://github.com/CriterionWorks/SPR-061-FootSoleDetectionForGCSMeasurement",
+    github: "",
     highlights: [
       "Custom dataset training for precise anatomical foot sole localization",
       "Supports automated reflex assessment input for ICU coma scoring",
@@ -511,9 +511,9 @@ export const projectsData = [
   },
   // 26. Bacterial Presence Detection using AI
   {
-    id: "spr047",
-    packageId: "SPR047",
-    projectId: "CT-PR-0161",
+    id: "sys-26",
+    packageId: "Microservice #26",
+    projectId: "Microbiology Edge AI",
     title: "Edge-AI Bacteria Colony Classification on Raspberry Pi",
     category: "ai-vision",
     status: "Running (Edge AI / Raspberry Pi)",
@@ -522,7 +522,7 @@ export const projectsData = [
     description: "Edge AI microservice deployed on Raspberry Pi 4 that analyzes culture plate images via camera, detects bacterial growth using TensorFlow/YOLOv8, and triggers immediate audio-visual alerts.",
     architecture: "Pi Camera -> Lightweight YOLOv8 Model -> Inference Engine -> Buzzer & GPIO Alert",
     tech: ["TensorFlow", "YOLOv8", "Raspberry Pi", "Edge AI", "Python", "GPIO"],
-    github: "https://github.com/Criterioninnovations/SPR047",
+    github: "",
     highlights: [
       "Optimized INT8 quantized model for real-time edge inference on Raspberry Pi",
       "Automates microbiology culture plate growth monitoring",
@@ -531,9 +531,9 @@ export const projectsData = [
   },
   // 27. Object & Coordinate Detection using Camera
   {
-    id: "spr083-069",
-    packageId: "SPR083 / SPR069",
-    projectId: "CT-PR-0177 / CT-PR-0101",
+    id: "sys-27",
+    packageId: "Microservice #27",
+    projectId: "Spatial Optics",
     title: "Industrial Camera Object Detection & Spatial Coordinates",
     category: "ai-vision",
     status: "Running (OpenCV + YOLO)",
@@ -542,7 +542,7 @@ export const projectsData = [
     description: "High-precision vision system tracking physical objects via overhead camera and outputting real-time 2D/3D spatial coordinates for industrial automation.",
     architecture: "Camera Feed -> Distortion Correction -> YOLO Detection -> Coordinate Matrix Mapping",
     tech: ["OpenCV", "YOLO", "Python", "Geometry Math", "Spatial Tracking"],
-    github: "https://github.com/Criterioninnovations/SPR083",
+    github: "",
     highlights: [
       "Sub-millimeter spatial coordinate mapping from camera perspective",
       "Multi-object simultaneous tracking with low latency",
@@ -551,9 +551,9 @@ export const projectsData = [
   },
   // 28. Edge-AI Medicine Strip & Pill Analyzer (Gemini Multimodal)
   {
-    id: "med-strip-analyzer",
-    packageId: "Pill Analyzer",
-    projectId: "Personal / Criterion",
+    id: "sys-28",
+    packageId: "Microservice #28",
+    projectId: "Multimodal GenAI",
     title: "Multimodal AI Medicine Strip Analyzer (YOLOv8 + Gemini API)",
     category: "ai-vision",
     status: "Running (Generative AI)",
@@ -571,9 +571,9 @@ export const projectsData = [
   },
   // 29. Bio-X Panel Hardware Integration
   {
-    id: "spr134",
-    packageId: "SPR134",
-    projectId: "CT-PR-0167",
+    id: "sys-29",
+    packageId: "Microservice #29",
+    projectId: "Panel Gateway",
     title: "Bio-X Medical Panel Integration & Gateway",
     category: "bms-infra",
     status: "Running (Docker)",
@@ -582,7 +582,7 @@ export const projectsData = [
     description: "Custom protocol parser and hardware gateway converting raw serial telemetry from hospital Bio-X panels into standardized JSON payloads for central monitoring.",
     architecture: "Bio-X Hardware -> Protocol Parser -> Docker Microservice -> Central Server",
     tech: ["Docker", "Python", "Serial / Protocol Parser", "Microservices"],
-    github: "https://github.com/CriterionWorks/SPR134-Bio-X-Panel-Integration",
+    github: "",
     highlights: [
       "Decodes proprietary binary telemetry from hardware panels",
       "Containerized microservice with fault-tolerant serial connection handling",
@@ -591,9 +591,9 @@ export const projectsData = [
   },
   // 30. Reverse Proxy & Zero-Downtime Infrastructure Setup
   {
-    id: "infra-devops",
-    packageId: "Infrastructure",
-    projectId: "Team Leadership",
+    id: "sys-30",
+    packageId: "Microservice #30",
+    projectId: "Core Architecture",
     title: "Enterprise Reverse Proxy & Self-Healing Container Infrastructure",
     category: "bms-infra",
     status: "Running (Production Infra)",
@@ -615,6 +615,6 @@ export const projectsData = [
 export const statsData = [
   { value: "28+", label: "Medical Microservices Migrated" },
   { value: "99.9%", label: "System Uptime & Reliability" },
-  { value: "25+", label: "GitHub Enterprise Repos" },
+  { value: "25+", label: "Production Deployments" },
   { value: "8+ Yrs", label: "Tech & Leadership Experience" }
 ];
